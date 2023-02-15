@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE PAYROLL</title>
+    <link rel="stylesheet" href="../css/emp.css">
+</head>
+
+<body>
+    <div class="div-container">
+        <div class="parent-div">
+            <div>
+                <img src="../assets/logo.png" class="logo">
+            </div>
+            <div class="text-parent">
+                <span class="emp">EMPLOYEE</span>
+                <span class="pay">PAYROLL</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-content-box" >
+        <div class="parent-form-div">
+            <span class="form-heading">Employee Payroll Form</span>
+            <div class="align-form-content">
+                <div class="label-heading">Name</div>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="align-form-content">
+                <div class="label-heading">Profile Image</div>
+                <div>
+                    <input type="radio" id="img-1" name="profile img" value="Img-1">
+                    <label for="img-1"><img class="radio-img" src="../assets/Ellipse -1.png"></label><br>
+                    <input type="radio" id="img-2" name="profile img" value="Img-2">
+                    <label for="img-2"><img class="radio-img" src="../assets/Ellipse -2.png"></label><br>
+                    <input type="radio" id="img-3" name="profile img" value="Img-3">
+                    <label for="img-3"><img class="radio-img" src="../assets/Ellipse -3.png"></label><br>
+                    <input type="radio" id="img-4" name="profile img" value="Img-4">
+                    <label for="img-4"><img class="radio-img" src="../assets/Ellipse -4.png"></label><br>
+                </div>
+            </div>
+            <div class="align-form-content">
+                <div class="label-heading">
+                    Gender
+                </div>
+                <div>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="align-form-content">
+                <div class="label-heading">Department</div>
+                <div>
+                    <input type="checkbox" id="hr" name="hr" value="HR">
+                    <label for="hr">HR</label><br>
+                    <input type="checkbox" id="sales" name="sales" value="Sales">
+                    <label for="sales">Sales</label><br>
+                    <input type="checkbox" id="finance" name="finance" value="Finance">
+                    <label for="finance">Finance</label><br>
+                    <input type="checkbox" id="engineer" name="engineer" value="Engineer">
+                    <label for="engineer">Engineer</label><br>
+                    <input type="checkbox" id="others" name="others" value="Others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+            <div class="align-form-content">
+                <div><label for="salary" class="label-heading">Salary</label></div>
+                <div>
+                    <select name="salary" id="salary">
+                    <option value="select">Select Salary</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="align-form-content">
+                <div><label for="date" class="label-heading">Start Date</label></div>
+                <div>
+                    <div>
+                        <select name="date" id="date">
+                            <option value="Day">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="date" id="date">
+                            <option value="Month">Month</option>
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sept">Sept</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="date" id="date">
+                            <option value="Year">Year</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="align-form-content">
+                <div>
+                    <label for="note" class="label-heading">Notes</label>
+                </div>
+                <div>
+                    <textarea id="note" name="note" rows="4" cols="50">
+                    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                    </textarea>
+                </div>
+            </div>
+            <div>
+                <button>Cancle</button>
+                <div>
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
