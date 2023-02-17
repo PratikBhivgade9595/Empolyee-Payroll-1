@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/emp.js"></script>
     <title>EMPLOYEE PAYROLL</title>
     <link rel="stylesheet" href="../css/emp.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
 </head>
 
 <body>
@@ -26,15 +30,15 @@
     <div class="main-content-box" >
         <div class="parent-form-div">
             <span class="form-heading">Employee Payroll Form</span>
-            <div class="align-form-content">
+            <div class="align-form-content"> 
                 <div class="label-heading">Name</div>
                 <div>
-                    <input type="text">
+                    <input type="text" id="text" placeholder="Enter Name" value="text">
                 </div>
             </div>
             <div class="align-form-content">
                 <div class="label-heading">Profile Image</div>
-                <div>
+                <div class="profile-align">
                     <input type="radio" id="img-1" name="profile img" value="Img-1">
                     <label for="img-1"><img class="radio-img" src="../assets/Ellipse -1.png"></label><br>
                     <input type="radio" id="img-2" name="profile img" value="Img-2">
@@ -49,25 +53,25 @@
                 <div class="label-heading">
                     Gender
                 </div>
-                <div>
+                <div class="profile-align" >
                     <input type="radio" id="male" name="gender" value="Male">
-                    <label for="male">Male</label><br>
+                    <label class="label-gender" for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label>
+                    <label class="label-gender" for="female">Female</label>
                 </div>
             </div>
             <div class="align-form-content">
                 <div class="label-heading">Department</div>
-                <div>
-                    <input type="checkbox" id="hr" name="hr" value="HR">
+                <div class="checkbox-department">
+                    <input type="checkbox" id="hr" name="department" value="HR">
                     <label for="hr">HR</label><br>
-                    <input type="checkbox" id="sales" name="sales" value="Sales">
+                    <input type="checkbox" id="sales" name="department" value="Sales">
                     <label for="sales">Sales</label><br>
-                    <input type="checkbox" id="finance" name="finance" value="Finance">
+                    <input type="checkbox" id="finance" name="department" value="Finance">
                     <label for="finance">Finance</label><br>
-                    <input type="checkbox" id="engineer" name="engineer" value="Engineer">
+                    <input type="checkbox" id="engineer" name="department" value="Engineer">
                     <label for="engineer">Engineer</label><br>
-                    <input type="checkbox" id="others" name="others" value="Others">
+                    <input type="checkbox" id="others" name="department" value="Others">
                     <label for="others">Others</label>
                 </div>
             </div>
@@ -76,17 +80,17 @@
                 <div>
                     <select name="salary" id="salary">
                     <option value="select">Select Salary</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                    <option value="saab">50000</option>
+                    <option value="mercedes">25000</option>
+                    <option value="audi">92000</option>
                     </select>
                 </div>
             </div>
             <div class="align-form-content">
                 <div><label for="date" class="label-heading">Start Date</label></div>
-                <div>
+                <div class="align-date">
                     <div>
-                        <select name="date" id="date">
+                        <select name="date" id="day">
                             <option value="Day">Day</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -122,7 +126,7 @@
                         </select>
                     </div>
                     <div>
-                        <select name="date" id="date">
+                        <select name="date" id="month">
                             <option value="Month">Month</option>
                             <option value="Jan">Jan</option>
                             <option value="Feb">Feb</option>
@@ -139,7 +143,7 @@
                         </select>
                     </div>
                     <div>
-                        <select name="date" id="date">
+                        <select name="date" id="year">
                             <option value="Year">Year</option>
                             <option value="2000">2000</option>
                             <option value="2001">2001</option>
@@ -165,14 +169,13 @@
                 </div>
                 <div>
                     <textarea id="note" name="note" rows="4" cols="50">
-                    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
                     </textarea>
                 </div>
             </div>
             <div>
                 <button>Cancle</button>
                 <div>
-                    <button>Submit</button>
+                    <button onclick="submit()">Submit</button>
                     <button>Reset</button>
                 </div>
             </div>

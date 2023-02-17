@@ -70,6 +70,7 @@ body {
 .parent-form-div {
     margin-left: 100px;
     margin-top: 50px;
+
 }
 
 .form-heading {
@@ -79,6 +80,7 @@ body {
     color: #42515F;
     text-transform: capitalize;
     opacity: 1;
+    margin-left: 20px;
 }
 
 .label-heading {
@@ -93,4 +95,29 @@ body {
     display: flex;
     flex-direction: row;
     gap: 90px;
+    padding: 20px;
+}
+
+.profile-align {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    gap: 10px;
+}
+
+.label-gender{
+    padding-top: 4.5px;
+}
+
+.checkbox-department{
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    gap: 10px;
+}
+.align-date{
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    gap: 10px;
 }
