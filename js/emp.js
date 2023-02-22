@@ -2,7 +2,6 @@
 
 var namee,profileImage,gender,department,day,month,year,notes,salary;
 var dataDisplay;
-
 function submit() {
     namee = document.getElementById("text").value;
 
@@ -43,7 +42,7 @@ function submit() {
 
 
 
-    dataDisplay = {
+   /* dataDisplay = {
         "name" : namee,
         "profileImg" : profileImage,
         "gender" : gender,
@@ -56,28 +55,62 @@ function submit() {
     }
     
 
+    console.log(dataDisplay);
+   */
+};
+
+$(document).ready(function () {
+    
     $("#Save").click(function () {
+
+        console.log(namee)
+        var person = new Object();
+        person.name = namee;
+        person.profileImg = profileImage;
+        person.gender = gender;
+        person.department = department;
+        person.day = day;
+        person.month = month;
+        person.year = year;
+        person.notes = notes;
+        person.salary = salary;
         $.ajax({
-            url: 'http://localhost:8080/data',
+            //url: 'http://localhost:3413/api/person',
+            url:'http://localhost:3000/data',
             type: 'POST',
             dataType: 'json',
-            data: dataDisplay,
+            data: person,
             success: function (data, textStatus, xhr) {
                 console.log(data);
             },
             error: function (xhr, textStatus, errorThrown) {
+                console.log(person);
                 console.log('Error in Operation');
             }
         });
     });
-    
-   
-}
+});
 
 
 
+/*
+$("#Save").click(function () {
+    $.ajax({
+        url: 'http://localhost:3000/data',
+        type: 'PUT',
+        dataType: 'json',
+        data: dataDisplay,
+        success: function (data, textStatus, xhr) {
+            console.log(data);
+        },
+        error: function (xhr, textStatus, errorThrown) {
+            console.log('Error in Operation');
+        }
+    });
+});
 
 
+*/
 
 
 

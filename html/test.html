@@ -1,0 +1,31 @@
+<head id="Head1" runat="server">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+        var person = new Object();
+        person.name = "Neha";
+        person.surname = "Kayal";
+        
+        $("#Save").click(function () {
+            $.ajax({
+                //url: 'http://localhost:3413/api/person',
+                url:'http://localhost:3000/data',
+                type: 'POST',
+                dataType: 'json',
+                data: person,
+                success: function (data, textStatus, xhr) {
+                    console.log(data);
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    console.log(person);
+                    console.log('Error in Operation');
+                }
+            });
+        });
+    });
+</script>
+</head>
+<body>
+<input type="button" id="Save" value="Save Data" />
+</body>
+</html>

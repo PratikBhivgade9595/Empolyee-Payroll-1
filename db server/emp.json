@@ -1,5 +1,129 @@
 {
-    "data" : [{
-        
-    }]
+  "data": [
+    {
+      "id": 1,
+      "name": "pratik",
+      "profileImg": "img1",
+      "gender": "Male",
+      "department": "Other",
+      "day": "01",
+      "month": "06",
+      "year": "2013",
+      "notes": "havcgh",
+      "salary": "120005"
+    },
+    {
+      "name": "Neha",
+      "profileImg": "Img-2",
+      "gender": "Male",
+      "department": "HR",
+      "day": "25",
+      "month": "05",
+      "year": "2022",
+      "notes": "I lve yo mn",
+      "salary": "2000",
+      "id": 2
+    },
+    {
+      "name": "[object Object]",
+      "id": 3
+    },
+    {
+      "name": "[object Object]",
+      "id": 4
+    },
+    {
+      "name": "[object Object]",
+      "id": 5
+    },
+    {
+      "name": "",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "notes": "                    ",
+      "salary": "select",
+      "id": 6
+    },
+    {
+      "name": "",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "notes": "                    ",
+      "salary": "select",
+      "id": 7
+    },
+    {
+      "name": "[object Object]",
+      "id": 8
+    },
+    {
+      "name": "[object Object]",
+      "id": 9
+    },
+    {
+      "name": "[object Object]",
+      "id": 10
+    },
+    {
+      "name": "[object Object]",
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "name": "aaccacac",
+      "profileImg": "Img-1",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "notes": "                    ",
+      "salary": "select",
+      "id": 15
+    },
+    {
+      "name": "pooja",
+      "profileImg": "Img-1",
+      "gender": "Male",
+      "department": "Sales",
+      "day": "18",
+      "month": "March",
+      "year": "2012",
+      "notes": "                 Hi   ",
+      "salary": "50000",
+      "id": 16
+    },
+    {
+      "name": "Ravi",
+      "profileImg": "Img-2",
+      "gender": "Male",
+      "department": "HR",
+      "day": "20",
+      "month": "Dec",
+      "year": "2013",
+      "notes": "          jjk          ",
+      "salary": "25000",
+      "id": 17
+    },
+    {
+      "name": "rahul",
+      "profileImg": "Img-2",
+      "gender": "Male",
+      "department": "Sales",
+      "day": "18",
+      "month": "Dec",
+      "year": "2013",
+      "notes": "           hi         ",
+      "salary": "50000",
+      "id": 18
+    }
+  ]
 }
