@@ -11,9 +11,6 @@
     <title>EMPLOYEE PAYROLL</title>
     <link rel="stylesheet" href="../css/emp.css">
     
-    <script>
-       
-    </script>
 
 </head>
 
@@ -27,15 +24,14 @@
                 <span class="emp">EMPLOYEE</span>
                 <span class="pay">PAYROLL</span>
             </div>
+
         </div>
     </div>
-
-
     <div class="main-content-box" >
         <div class="parent-form-div">
             <span class="form-heading">Employee Payroll Form</span>
             <div class="align-form-content"> 
-                <div class="label-heading">Name</div>
+                <div class="label-heading" >Name</div>
                 <div>
                     <input type="text" id="text" placeholder="Enter Name" value="">
                 </div>
@@ -80,7 +76,7 @@
                 </div>
             </div>
             <div class="align-form-content">
-                <div><label for="salary" class="label-heading">Salary</label></div>
+                <div class="label-heading"><label for="salary" class="label-heading">Salary</label></div>
                 <div>
                     <select name="salary" id="salary">
                     <option value="select">Select Salary</option>
@@ -91,7 +87,7 @@
                 </div>
             </div>
             <div class="align-form-content">
-                <div><label for="date" class="label-heading">Start Date</label></div>
+                <div class="label-heading"><label for="date" class="label-heading">Start Date</label></div>
                 <div class="align-date">
                     <div>
                         <select name="date" id="day">
@@ -168,7 +164,7 @@
                 </div>
             </div>
             <div class="align-form-content">
-                <div>
+                <div class="label-heading">
                     <label for="note" class="label-heading">Notes</label>
                 </div>
                 <div>
@@ -176,11 +172,11 @@
                     </textarea>
                 </div>
             </div>
-            <div>
-                <button>Cancle</button>
+            <div style="display: flex;justify-content: space-between; width: 75.5%;">
+                <button class="buttons">Cancle</button>
                 <div>
-                    <button onclick="submit()" id="Save">Submit</button>
-                    <button>Reset</button>
+                    <button class="buttons" onclick="submit()" id="Save">Submit</button>
+                    <button class="buttons" >Reset</button>
                 </div>
             </div>
         </div>

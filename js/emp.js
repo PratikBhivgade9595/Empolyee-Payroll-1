@@ -74,8 +74,8 @@ $(document).ready(function () {
         person.year = year;
         person.notes = notes;
         person.salary = salary;
+
         $.ajax({
-            //url: 'http://localhost:3413/api/person',
             url:'http://localhost:3000/data',
             type: 'POST',
             dataType: 'json',
@@ -93,24 +93,8 @@ $(document).ready(function () {
 
 
 
-/*
-$("#Save").click(function () {
-    $.ajax({
-        url: 'http://localhost:3000/data',
-        type: 'PUT',
-        dataType: 'json',
-        data: dataDisplay,
-        success: function (data, textStatus, xhr) {
-            console.log(data);
-        },
-        error: function (xhr, textStatus, errorThrown) {
-            console.log('Error in Operation');
-        }
-    });
-});
 
 
-*/
 
 
 
